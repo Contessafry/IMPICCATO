@@ -13,7 +13,7 @@ body {
 #contatore {
   background-color: #575555;
   border: solid #9b9b9b 5px;
-  width: 7vw;
+  width: 5vw;
   height: 10vh;
   border-radius: 50%;
   display: flex;
@@ -24,10 +24,12 @@ body {
   color: white;
 }
 #guest {
+  display: flex;
   color: black;
   min-width: 186px;
   font-family: monospace;
   font-size: xx-large;
+  justify-content: center;
 }
 input {
   height: 3vh;

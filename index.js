@@ -60,8 +60,9 @@ let parolePossibili = [
   "fuoco",
   "libro",
   "monte",
+  "lorenzo",
 ];
-let randomN = parseInt(Math.random() * 30);
+let randomN = parseInt(Math.random() * parolePossibili.length);
 
 let parolaArr = parolePossibili[randomN].split("");
 let guessed = [...parolaArr].fill("_");
@@ -69,13 +70,16 @@ elementguestDiv.innerHTML = guessed.join(" ");
 
 function response() {
   switch (true) {
-    case input.value.length > 1 && input.value == parolePossibili[randomN]:
+    case input.value.length > 1 &&
+      input.value.toLowerCase() == parolePossibili[randomN]:
       elementguestDiv.innerHTML = parolaArr.join(" ");
       winScreen();
       break;
     case input.value.length == 1:
       guessed = guessed.map((letter, i) => {
-        return parolaArr[i] == input.value[0] ? input.value[0] : letter;
+        return parolaArr[i] == input.value[0].toLowerCase()
+          ? input.value[0]
+          : letter;
       });
       elementguestDiv.innerHTML = guessed.join(" ");
       break;
