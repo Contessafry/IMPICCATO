@@ -1,4 +1,7 @@
 body {
+  color: floralwhite;
+  font-family: fantasy;
+  font-size: xx-large;
   background-color: beige;
   gap: 15px;
   padding: 43vh;
@@ -21,6 +24,7 @@ body {
   color: white;
 }
 #guest {
+  color: black;
   min-width: 186px;
   font-family: monospace;
   font-size: xx-large;
