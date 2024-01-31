@@ -34,7 +34,7 @@ input {
   border-radius: 10px;
   border: solid #fe8017c2 5px;
 }
-#in {
+button {
   background-color: #fe8017c2;
   color: floralwhite;
   display: flex;
