@@ -81,12 +81,13 @@ function response() {
           ? input.value[0]
           : letter;
       });
+      wrongAnswer();
       elementguestDiv.innerHTML = guessed.join(" ");
       break;
     default:
       break;
   }
-  wrongAnswer();
+
   input.value = "";
 }
 
